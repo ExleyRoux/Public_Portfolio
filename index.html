@@ -4,11 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
 </head>
 
 <body>
-    <h6>REEEEEEEEEEEE</h6>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-md-4 mb-sm-1">
+        <div class="container-fluid">
+            <a class="navbar-brand img-thumbnail" href="#"><img src="images/logo.jpg" style="max-height: 40px" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">My Order</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropDown" data-toggle="dropdown">List</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Item1</a>
+                            <a class="dropdown-item" href="#">Item2</a>
+                            <a class="dropdown-item" href="#">Item3</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Item4</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <asp:Label ID="lblLogin" class="nav-link" runat="server" Text="Login" href="#"></asp:Label>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="display-4 text-center">Coffee!</div>
+
+    <div class="container">
+        <div class="jumbotron text-md-center text-sm-left row mt-sm-1 mt-md-3">
+            <div class="col-sm-12 col-md-3 col-lg-4">
+                <h3 class="text-uppercase">A heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, soluta?</p>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, veritatis. Reiciendis nihil maxime enim nisi quam, asperiores illo aperiam quod!</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 container-fluid">
+                <img class="figure-img w-300" src="images/pexels-kaboompics-com-6347.jpg" style="max-width: 300px;">
+            </div>
+            <div class="lead">
+                <button class="btn btn-dark">Button</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="display-4">Display Title</div>
+        <h3>Important heading</h3>
+        <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, iste eos modi sed ipsum esse adipisci odit ab enim sunt reiciendis ea dignissimos. Unde aspernatur debitis obcaecati suscipit accusamus odit.</p>
+        <button class="btn btn-dark">Button</button>
+        <input type="text" class="form-control" placeholder="Text goes here">
+    </div>
+
+    <footer class="page-footer font-small bg-dark pt-md-4 pb-4 mt-4 text-light">
+        <div class="container-fluid text-center text-sm-left">
+            <div class="row">
+                <div class="col">
+                    <h4>This footer is a footer</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="https://www.buymeacoffee.com/exley"><img src="https://img.buymeacoffee.com/button-api/?text=Want to buy me a coffee?&slug=exley&button_colour=000000&font_colour=ffffff&font_family=Comic&outline_colour=ffffff&coffee_colour=FFDD00"></a>
+                </div>
+                <div class="col">
+                    <h5>Some links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Footer Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Footer Link 2</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Some other links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Footer Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Footer Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+    <div class="footer-copyright text-center py-3">
+        Copyright text
+        <a href="#">2020</a>
+    </div>
+
+
+    <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="exley" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#5F7FFF" data-position="Right"
+        data-x_margin="18" data-y_margin="18"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
