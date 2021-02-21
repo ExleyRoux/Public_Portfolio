@@ -1,0 +1,84 @@
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+title{
+    display: none;
+}
+
+.ruler{
+    border-bottom: 1px solid rgb(29, 29, 90);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-family: 'Rock Salt', cursive;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.section_1{
+    height: 100vh;
+}
+
+.section_1_title{
+    font-family: 'Playfair Display SC', serif;
+    display:flex;
+    justify-content: space-around;
+}
+
+.section_1_background{
+    background-image: url("../images/concretewall.png");
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.white_block{
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    border-radius: 3px;
+    z-index: 3;
+    -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section_1_img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1px;
+    z-index: 4;
+}
+
+.section_1_subscript{
+    font-family: 'Playfair Display SC', serif;
+
+}
+
+.logo-small{
+    width: 2.5rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.coffee{
+    display: flex;
+    justify-content: space-around;
+}
