@@ -2,47 +2,73 @@ body {
     display: block;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
-title{
+.bg {
+    background: url("../images/");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+title {
     display: none;
 }
 
-.ruler{
-    border-bottom: 1px solid rgb(29, 29, 90);
+.ruler {
+    border-bottom: 1px solid rgb(2, 2, 65);
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Rock Salt', cursive;
+    color: black;
 }
 
-.navbar{
-    background-color: rgba(255, 255, 255, 0.685);
+.nav-link {
+    color: #004085;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-shadow: -1px -1px 1px rgb(255, 255, 255);
 }
 
-.section_1{
-    
+.nav-link:hover {
+    color: #87a3c2;
 }
 
-.section_1_title{
+.firstpage {
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    .firstpage {
+        height: auto;
+    }
+}
+
+.section_1_title {
     font-family: 'Playfair Display SC', serif;
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
-.section_1_background{
-    background-image: url("../images/concretewall.png");
+.section_1_background {
+    background-image: url("../images/oceanwaves.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 3px;
     z-index: 2;
+    overflow: hidden;
 }
 
-.white_block{
+.white_block {
     width: 30%;
     height: auto;
     margin-left: auto;
@@ -51,12 +77,12 @@ title{
     border: 1px solid rgba(128, 128, 128, 0.623);
     border-radius: 3px;
     z-index: 3;
-    -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
-    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.35);
 }
 
-.section_1_img{
+.section_1_img {
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -65,12 +91,63 @@ title{
     z-index: 4;
 }
 
-.section_1_subscript{
+.section_1_subscript {
     font-family: 'Playfair Display SC', serif;
-
+    color: #0477A2;
 }
 
-.logo-small{
+.section_2_title {
+    font-family: 'Galada', cursive;
+    color: #0477A2;
+}
+
+.section_2_subtitle{
+    font-family: 'Playfair Display SC', serif;
+    color: #0477A2;
+}
+
+.section_2_cards {
+    
+}
+
+.card_ {
+    display: inline-grid;
+    grid-template-columns: 20% 80%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(2, 2, 65);
+    border-radius: 3px;
+    padding: 1rem;
+    margin:0.51rem;
+}
+
+.card-img {
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .card-img {
+        max-width: 20vw;
+    }
+    .section_2_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card_ {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        min-width: 50%;
+        max-width: 90vw;
+
+        margin: 0.5rem;
+    }
+}
+
+.logo-small {
     width: 2.5rem;
     height: auto;
     margin-left: auto;
@@ -78,17 +155,11 @@ title{
     margin-top: 5px;
 }
 
-.coffee{
+.coffee {
     display: flex;
     justify-content: space-around;
 }
 
-.construction{
-    border: 2px solid rgb(255, 102, 0);
-    background-color: rgba(255, 166, 0, 0.384);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
+.below-footer {
+    overflow: hidden;
 }
