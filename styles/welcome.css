@@ -18,6 +18,9 @@ html, body{
     z-index: -1;
 }
 
+
+/*general*/
+
 .ruler {
     border-bottom: 2px solid rgb(2, 2, 65);
 }
@@ -40,6 +43,12 @@ html, body{
     color: #0477A2;
     margin-bottom: 2rem;
 }
+
+.section{
+    margin-bottom: 2rem;
+}
+
+/*navbar*/
 
 nav {
 }
@@ -72,17 +81,8 @@ nav {
     color: #87a3c2;
 }
 
-.landing-container{
-}
 
-.landing {
-}
-
-.landing-text{
-}
-
-.landing-image-container{
-}
+/*landing section*/
 
 @media only screen and (min-width: 768px){
     .landing-container{
@@ -150,9 +150,17 @@ nav {
     z-index: 4;
 }
 
+/*about section*/
+
+.about{
+}
+
 
 /*more info section*/
 
+.tabs-title{
+    background-color: #0478a210;
+}
 
 .card_ {
     width: 100%;
@@ -198,6 +206,8 @@ nav {
         margin: 0.5rem;
     }
 }
+
+/*footer*/
 
 .logo-small {
     width: 2.5rem;
