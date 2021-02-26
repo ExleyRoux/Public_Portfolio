@@ -1,9 +1,13 @@
-body {
-    display: block;
-    margin: 0;
-    padding: 0;
-    position: relative;
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
+
+html, body{
+    height: 100%;
+}
+
 
 .bg {
     background: url("../images/");
@@ -14,16 +18,30 @@ body {
     z-index: -1;
 }
 
-title {
-    display: none;
-}
-
 .ruler {
-    border-bottom: 1px solid rgb(2, 2, 65);
+    border-bottom: 2px solid rgb(2, 2, 65);
 }
 
 .bold {
     font-weight: bold;
+}
+
+.text-heading{
+    font-family: 'Playfair Display SC', serif;
+}
+
+.text-title {
+    font-family: 'Galada', cursive;
+    color: #0477A2;
+}
+
+.text-subtitle {
+    font-family: 'Playfair Display SC', serif;
+    color: #0477A2;
+    margin-bottom: 2rem;
+}
+
+nav {
 }
 
 .navbar-brand {
@@ -32,33 +50,67 @@ title {
     bottom: 0;
     left: 0;
     position: fixed;
+    z-index: 10;
 }
 
-.nav-link {
+.nav-links {
     color: #004085;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     text-shadow: -1px -1px 1px rgb(255, 255, 255);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
 }
 
 .nav-link:hover {
     color: #87a3c2;
 }
 
-.firstpage {
+.landing-container{
 }
 
-@media only screen and (max-width: 1000px) {
-    .firstpage {
+.landing {
+}
+
+.landing-text{
+}
+
+.landing-image-container{
+}
+
+@media only screen and (min-width: 768px){
+    .landing-container{
+        min-height: 100%;
+    }
+    
+    .landing{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100%;
+    }
+
+    .landing-text{
+        min-width: 0;
+    }
+    
+    .landing-image-container{
+        min-width: 0;
     }
 }
 
-.section_1_title {
-    font-family: 'Playfair Display SC', serif;
+.landing-title {
     display: flex;
     justify-content: space-around;
 }
 
-.section_1_background {
+.landing-background {
     background-image: url("../images/oceanwaves.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +121,7 @@ title {
     overflow: hidden;
 }
 
-.white_block {
+.block-white {
     width: 30%;
     height: auto;
     margin-left: auto;
@@ -83,7 +135,13 @@ title {
     box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.35);
 }
 
-.section_1_img {
+@media only screen and (max-width: 768px){
+    .block-white{
+        width: 70%;
+    }
+}
+
+.landing-img {
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -92,47 +150,39 @@ title {
     z-index: 4;
 }
 
-.section_1_subscript {
-    font-family: 'Playfair Display SC', serif;
-    color: #0477A2;
-}
 
-.section_2_title {
-    font-family: 'Galada', cursive;
-    color: #0477A2;
-}
+/*more info section*/
 
-.section_2_subtitle{
-    font-family: 'Playfair Display SC', serif;
-    color: #0477A2;
-}
-
-.section_2_cards {
-    
-}
 
 .card_ {
+    width: 100%;
     display: inline-grid;
     grid-template-columns: 20% 80%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(2, 2, 65, 0.164);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 1.25rem;
-    margin:0.75rem;
-
+    margin: 0.75rem;
     background-color: white;
-    
+}
+
+.card_link{
+    text-decoration: none;
+    color: #004085;
+}
+
+.card_link:hover{
+    background-color:#0478a218;
 }
 
 .card-img {
-    max-width: 30vw;
 }
 
 @media only screen and (max-width: 700px) {
     .card-img {
         max-width: 20vw;
     }
-    .section_2_cards {
+    .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -143,10 +193,8 @@ title {
         display: flex;
         flex-direction: column;
         text-align: center;
-
         min-width: 50%;
-        max-width: 90vw;
-
+        max-width: 90%;
         margin: 0.5rem;
     }
 }
@@ -168,12 +216,7 @@ title {
     overflow: hidden;
 }
 
-.tab-content{
-    border-radius: 3px;
-    background-color: white;
-}
 
-.moreInformation{
-    background-color: #0478a221;
-    padding: 1rem;
-}
+
+
+
