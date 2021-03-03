@@ -9,10 +9,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="./styles/welcome.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="icon" href="./images/sketch1613907537143.png">
+    <link rel="icon" href="./images/sketch1612209983647.png">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -45,230 +47,54 @@
 </head>
 
 <body>
-
-    <div id="navbar-brand" class="navbar-brand container">
-        <p>Exley Roux</p>
-    </div>
-
-    <!--<div class="m-2">
-        <p class="alert alert-primary" >This website is under construction... Please check in again soon for more content</p>
-    </div>-->
-
-    <!--<nav>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="nav-links">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Contact</a></li>
-        </ul>
-    </nav>-->
-
-
-    <!--<nav class="navbar navbar-expand-md sticky-top">
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
-            data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home_section_jump">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about_section_jump">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>-->
-
-    <div id="home_section_jump" class="landing">
-        <div class="landing-text text-heading">
-            <div class="landing-title">
-                <h2 class="text-heading mt-2 pb-1 text-center ruler text-lg-center">Exley Roux</h2>
+    <div class="landing-container">
+        <nav class="navbar navbar-expand-md">
+            <div id="navbar-brand" class="navbar-brand container">
+                <p>Exley Roux</p>
             </div>
-            <h6 class="text-subtitle text-center ">Programmer, Dreamer, Problem Solver
-        </div>
-        <div class="landing-image-container">
-            <div class="landing-image">
-                <div class="">
-                    <hr class="ruler mt-0">
-                    <div class="landing-background p-2 p-lg-3">
-                        <div class="landing-img-background">
-                            <div class="block-white p-1 p-lg-2">
-                                <img class="landing-img" src="./images/profile.jpg" alt="Profile picture">
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="ruler mb-0">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="about_section_jump" class="about p-3">
-        <hr class="">
-        <div class="container">
-            <div class="">
-                <h1 class="text-title text-center">About me</h1>
-                <h5 class="text-subtitle text-center">Hi! I'm Exley. Happy to be of service!</h5>
-            </div>
-            <div class="about-text">
-                <p class="text-center">
-                    Hi! I'm Exley! An up-and-coming Software Developer. I'm currently studying for my bachelor's degree
-                    in Information Technology at the North-West University in South Africa.
-
-                    Hard working and dedicated, I strive to learn as much as I can so I can solve any problem I come in
-                    contact with.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="moreInformation" class="moreInformation p-3">
-        <hr class="">
-        <h1 class="text-title text-center">More Information</h1>
-        <h5 class="text-subtitle text-center">For more information, please select one of the tabs below</h5>
-
-        <div class="tabs border container">
-            <div class="tabs-title">
-                <hr>
-                <ul id="selection" class="nav nav-pills nav-fill container nav-justified">
-                    <li class="nav-item tab-pane">
-                        <a data-toggle="tab" class="nav-link active" href="#contact_section_jump">Contact</a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
-                    <li class="nav-item tab-pane">
-                        <a data-toggle="tab" class="nav-link" href="#languages_section_jump">Languages</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/about.html">About</a>
                     </li>
-                    <li class="nav-item tab-pane">
-                        <a data-toggle="tab" class="nav-link disabled" href="#">Timeline</a>
-                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="./public/contact.html">Contact</a>
+                    </li>-->
                 </ul>
-                <hr>
             </div>
-
-
-
-            <!--More info tab content-->
-
-            <div class="tab-content container p-sm-2 p-md-3 p-lg-4">
-
-                <!--Contact me-->
-                <div id="contact_section_jump" class="section_3 container tab-pane fade-in active">
-                    <h5 class="text-title text-center">Contact me</h5>
-                    <p class="text-center">Click on any of these links to find me</p>
-                    <div class="text-center"> <a href="#footer">For my social media links, please refer to the footer of
-                            this page, or <u>click here</u></a></div>
-                    <div class="cards">
-                        <a href="https://www.linkedin.com/in/exleyroux/" target="_blank">
-                            <div class="p-2 card_ card_link">
-                                <div class="">
-                                    <img class="card-img" src="./images/linkedin_512px.png" alt="Card Image">
-                                </div>
-                                <div class="">
-                                    <h4 class="">LinkedIn</h4>
-                                    <hr class="ruler">
-                                    <p class="">My academic and professional records are on my LinkedIn profile</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="https://github.com/ExleyRoux" target="_blank">
-                            <div class="p-2 card_ card_link">
-                                <div class="">
-                                    <img class="card-img" src="./images/github_512px.png" alt="Card Image">
-                                </div>
-                                <div class="">
-                                    <h4 class="">GitHub</h4>
-                                    <hr class="ruler">
-                                    <p class="">My projects, assignments and other resources for this year will be
-                                        located here</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="text-center ">
-                        <a href="#moreInformation">Click here to go back to 'More Information'</a>
-                    </div>
+        </nav>
+        <div class="landing">
+            <div class="landing-text text-heading">
+                <div class="landing-title">
+                    <h2 class="text-heading mt-2 pb-1 text-center ruler text-lg-center">Exley Roux</h2>
                 </div>
-
-                <!--My languages-->
-                <div id="languages_section_jump" class="tab-pane mt-3 fade">
-                    <h5 class="text-title text-center">Programming Languages</h5>
-                    <p class="text-center">Some programming languages I've become familiar with</p>
-
-                    <div class="cards">
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="./images/c_500px.jpg" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">C</h4>
-                                <hr class="ruler">
-                                <p class="">Early in 2018 I learnt C as my first programming language. Later that year,
-                                    after discovering microcontrollers, I used C to program a 8051 microchip for various
-                                    projects. In 2020, I used this knowledge to program and work with an Arduino as a
-                                    hobby.</p>
+                <h6 class="text-subtitle text-center ">Programmer, Dreamer, Problem Solver
+            </div>
+            <div class="landing-image-container">
+                <div class="landing-image">
+                    <div class="">
+                        <hr class="ruler mt-0">
+                        <div class="landing-background p-2 p-lg-3">
+                            <div class="landing-img-background">
+                                <div class="block-white p-1 p-lg-2">
+                                    <img class="landing-img" src="./images/profile.jpg" alt="Profile picture">
+                                </div>
                             </div>
                         </div>
-
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="./images/c++_500px.png" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">C++</h4>
-                                <hr class="ruler">
-                                <p class="">In 2019, after studying Computer Engineering for three semesters, I
-                                    transfered to Information Technology. In this year, I learnt and worked with C++ and
-                                    C#. While doing C++, I focused on bettering my understanding of programming concepts
-                                    and strengthening my programming foundation.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="./images/icons8-c-sharp-logo-500.png" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">C#</h4>
-                                <hr class="ruler">
-                                <p class="">In 2019, alongside C++, I learnt and worked with C#, focusing on user
-                                    interfaces, efficiency, best practices and peer-programming.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="./images/java_512px.png" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">Java</h4>
-                                <hr class="ruler">
-                                <p class="">In 2020 I worked with Java, focusing specifically on
-                                    object-oriented-programming, documentation, best practices, error handling,
-                                    flexibility and
-                                    reusability in programming.</p>
-                            </div>
-                        </div>
-
-
+                        <hr class="ruler mb-0">
                     </div>
-
-                    <div class="text-center ">
-                        <a href="#moreInformation">Click here to go back to 'More Information'</a>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
+    
 
 
 
@@ -279,7 +105,14 @@
 
 
 
-    <footer id="footer" class="page-footer font-small mt-4">
+
+
+
+
+
+
+
+    <!--<footer id="footer" class="page-footer font-small mt-4">
         <hr class="ruler">
         <div class="container-fluid text-center">
             <div class="row">
@@ -335,7 +168,9 @@
     </div>
 
     <hr class="ruler">
-    <div class="copyright text-center"><p>2021</p></div>
+    <div class="copyright text-center">
+        <p>2021</p>
+    </div>-->
 
     </div>
 
