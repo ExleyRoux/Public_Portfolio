@@ -61,7 +61,8 @@ html, body{
 }
 
 nav {
-    min-height: 15%;
+    min-height: 10%;
+    background-color: #0477A2;
 }
 
 .navbar-brand {
@@ -85,8 +86,6 @@ nav {
 
 .nav-link {
     color: black;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
-    text-shadow: -1px -1px 1px rgb(255, 255, 255);
 }
 
 .nav-links {
@@ -99,7 +98,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #0477A2;
+    color: #ffffff;
 }
 
 /*landing section*/
