@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/about.css">
 
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="icon" href="../images/sketch1612209983647.png">
@@ -25,11 +23,14 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> $(function(){ $("#footer").load("footer.html"); }); </script>
+    <script> $(function(){ $("#copyright").load("copyright.html"); }); </script>
+    <script> $(function(){ $("#moreInfo").load("moreInfo.html"); }); </script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
 </head>
 
@@ -60,192 +61,23 @@
         <div class="">
             <div class="container">
                 <div class="">
-                    <h1 class="text-title text-center">About me</h1>
-                    <h5 class="text-subtitle text-center">Hi! I'm Exley. Happy to be of service!</h5>
+                    <h1 class="text-title text-center">About Me</h1>
                 </div>
                 <div class="about-text">
-                    <p class="text-center">
-                        Hi! I'm Exley! An up-and-coming Software Developer. I'm currently studying for my bachelor's
-                        degree
-                        in Information Technology at the North-West University in South Africa.
-
-                        Hard-working, curious and dedicated, I strive to learn as much as I can to solve any problem I
-                        come in
-                        contact with.
-                    </p>
+                    <p class="text-center">Hi! I'm Exley! I'm a Software Developer. I hold a bachelor's degree in Information Technology from North-West University in South Africa. Hard-working, curious, and dedicated, I continuously strive to expand my knowledge and skills to tackle any challenge that comes my way.</p>
                 </div>
             </div>
 
         </div>
     </div>
-    <div id="moreInformation" class="moreInformation p-3">
-        <h1 class="text-title text-center text-black">More Information</h1>
-        <h5 class="text-subtitle text-center text-white">For more information, please select one of the tabs below</h5>
-
-        <div class="tabs container bg-light">
-            <div class="tabs-title">
-                <hr>
-                <ul id="selection" class="nav nav-pills nav-fill container nav-justified">
-                    <li class="nav-item tab-pane">
-                        <a data-toggle="tab" class="nav-link active" href="#languages_section_jump">Languages</a>
-                    </li>
-                    <li class="nav-item tab-pane">
-                        <a data-toggle="tab" class="nav-link" href="#timeline_section_jump">Contact</a>
-                    </li>
-                </ul>
-                <hr>
-            </div>
-
-
-
-            <!--More info tab content-->
-
-            <div class="tab-content container p-sm-2 p-md-3 p-lg-4">
-
-                <!--My languages-->
-                <div id="languages_section_jump" class="tab-pane fade-in active">
-                    <h5 class="text-title text-center">Programming Languages</h5>
-                    <p class="text-center">Some programming languages I've become familiar with</p>
-
-                    <div class="cards">
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="../images/c_500px.jpg" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">C</h4>
-                                <hr class="ruler">
-                                <p class="">Early in 2018, I learnt C as my first programming language. Later that year,
-                                    after discovering microcontrollers, I used C to program an 8051 microchip for
-                                    various
-                                    projects. In 2020, I used this knowledge to program and work with an Arduino as a
-                                    hobby.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="../images/c++_500px.png" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">C++</h4>
-                                <hr class="ruler">
-                                <p class="">In 2019, after studying Computer Engineering for three semesters, I
-                                    transferred to Information Technology. In this year, I learnt and worked with C++
-                                    and C#. While doing C++, I focused on bettering my understanding of programming
-                                    concepts
-                                    and strengthening my programming foundation.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="../images/icons8-c-sharp-logo-500.png" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">C#</h4>
-                                <hr class="ruler">
-                                <p class="">In 2019, alongside C++, I learnt and worked with C#, focusing on user
-                                    interfaces, efficiency, best practices, and peer-programming.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-2 card_">
-                            <div class="">
-                                <img class="card-img" src="../images/java_512px.png" alt="Card Image">
-                            </div>
-                            <div class="">
-                                <h4 class="">Java</h4>
-                                <hr class="ruler">
-                                <p class="">In 2020 I worked with Java, focusing specifically on
-                                    object-oriented-programming, documentation, best practices, error handling,
-                                    flexibility, and
-                                    reusability in programming.</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="text-center ">
-                        <a href="#moreInformation">Click here to go back to 'More Information'</a>
-                    </div>
-
-
-
-                </div>
-
-                <div id="timeline_section_jump" class="tab-pane fade">
-                    <div class="alert alert-primary" role="alert">Hello there! This section is currently under
-                        construction</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    <div id="moreInfo"></div>
       
-
-    <footer id="footer" class="page-footer font-small p-2">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col">
-                    <h5 class="bold">Thank you for visiting! </h5>
-                    <p>There will be updates, so I hope to see you again soon!</p>
-                    </div>
-                    
-                </div>
-                <div>
-                    <h5 class="bold">Social Media links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://www.instagram.com/exleyroux" target="_blank" alt="Social Media link"><img
-                                    class="logo-small" src="../images/instagram_64px.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/exleyroux/" target="_blank"
-                                alt="Social Media link"><img class="logo-small" src="../images/linkedin_64px.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ExleyRoux" target="_blank" alt="Social Media link"><img
-                                    class="logo-small" src="../images/github_64px.png"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5 class="bold">More links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://steamcommunity.com/id/ExleyRoux/" target="_blank"
-                                alt="Social Media link"><img class="logo-small" src="../images/steam_64px.png"></a>
-                        </li>
-                        <li>
-                            <td><a href="https://www.youtube.com/channel/UC4aRTk9woBb1vIY-8D8h4Og" target="_blank"
-                                    alt="Social Media link"><img class="logo-small"
-                                        src="../images/youtube_64px.png"></a>
-                            </td>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--<hr class="ruler mt-0">
-
-    <div class="below-footer">
-        <div class="row">
-            <div class="col">
-                <p class="coffee">Want to send some support? Click below:</p>
-                <a class="coffee" href="https://www.buymeacoffee.com/exley" target="_blank"><img
-                        src="https://img.buymeacoffee.com/button-api/?text=Want to buy me a coffee?&slug=exley&button_colour=000000&font_colour=ffffff&font_family=Comic&outline_colour=ffffff&coffee_colour=FFDD00"></a>
-            </div>
-        </div>
-    </div>-->
+    <div id="footer"></div>
 
     <hr class="ruler">
-    <div class="copyright text-center">
-        <p>2021</p>
-    </div>
-</body>
+    
+    <div id="copyright"></div>
 
+</body>
 </html>

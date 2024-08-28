@@ -179,11 +179,6 @@ nav {
     margin-top: 5px;
 }
 
-.coffee {
-    display: flex;
-    justify-content: space-around;
-}
-
 .below-footer {
     overflow: hidden;
 }

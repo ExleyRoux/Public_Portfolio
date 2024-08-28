@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreInformation</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> $(function(){ $("#experienceInfo").load("experienceInfo.html"); }); </script>
+    <script> $(function(){ $("#contactInfo").load("contactInfo.html"); }); </script>
+
+</head>
+<body>
+    <div id="moreInformation" class="moreInformation p-3">
+        <h1 class="text-title text-center text-black">More Information</h1>
+        <h5 class="text-subtitle text-center text-white">For more information, please select one of the tabs below</h5>
+    
+        <div class="tabs container bg-light">
+            <div class="tabs-title">
+                <hr>
+                <ul id="selection" class="nav nav-pills nav-fill container nav-justified">
+                    <li class="nav-item tab-pane">
+                        <a data-toggle="tab" class="nav-link active" href="#experience_section_jump">Experience</a>
+                    </li>
+                    <li class="nav-item tab-pane">
+                        <a data-toggle="tab" class="nav-link" href="#timeline_section_jump">Contact</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+    
+            <!--More info tab content-->
+    
+            <div class="tab-content container p-sm-2 p-md-3 p-lg-4">
+    
+                <!--Experience-->
+                <div id="experience_section_jump" class="tab-pane fade-in active">
+    
+                    <div id="experienceInfo"></div>
+    
+                    <div class="text-center ">
+                        <a href="#moreInformation">Click here to go back to 'More Information'</a>
+                    </div>
+    
+                </div>
+    
+                <div id="timeline_section_jump" class="tab-pane fade">
+                    <div id="contactInfo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+    
